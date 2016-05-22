@@ -2,7 +2,9 @@
 
 [![Docker Repository on Quay](https://quay.io/repository/picymru/exchange/status "Docker Repository on Quay")](https://quay.io/repository/picymru/exchange) [![GitHub license](https://img.shields.io/github/license/picymru/exchange.svg)]()
 
-We're committed to being open about how we work, so how better than to completely open source our website!
+eXchange is a [PiCymru](https://picymru.org.uk) supported project to bring equipment and resources to those in need! From schools and colleges, to charities and community projects. We're stocking [Raspberry Pi](https://raspberrypi.org), [Arduino](https://www.arduino.cc) as well as stage lighting, public address and other equipment you need!
+
+As part of our mission, we're committed to being open about how we work, so this repository will track the open sourcing of the platform to peer review, and to allow other projects to extend, and expand our work!
 
 ## Building
     docker build -t picymru/exchange .
