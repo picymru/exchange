@@ -9,7 +9,7 @@ We're committed to being open about how we work, so how better than to completel
 
 ## Running
 ### Using docker
-    docker run -e HOST=0.0.0.0 -e PORT=80 -p 80:80 quay.io/picymru/exchange
+    docker run -e APP_MODE=prod -p 80:5000 quay.io/picymru/exchange
 ### Using docker-compose
     version: '2'
     services:
