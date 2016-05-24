@@ -6,4 +6,4 @@ COPY . /app
 RUN virtualenv /env && /env/bin/pip install -r /app/requirements.txt
 
 EXPOSE 5000
-CMD ["/env/bin/python", "application.py"]
+CMD ["/env/bin/python", "app.py"]

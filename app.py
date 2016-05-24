@@ -10,14 +10,16 @@ from tinydb.operations import increment
 
 def return_tpl(tpl, *data):
     if not appMode is 'prod':
-        response.code = '403'
-        return template("maintain/index", *data)
+        return template("maintain/index", {
+            "title": "Uh oh...",
+            "message": "You stumbled upon this too early! We're coming soon!"
+        })
     else:
         return template(tpl, *data)
 
 @route('/static/<filepath:path>')
 def server_static(filepath):
-    return static_file(filepath, root='views/static')
+    return static_file(filepath, root='static')
 
 @route('/')
 def index():
